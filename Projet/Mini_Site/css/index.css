@@ -1,9 +1,11 @@
+
 body{
     padding:0px;
     margin:0px;
     font-family: 'Noto Sans',sans-serif;
     font-size: 1.5em;
     background-color:  rgb(255,249,240);
+
 }
 
 header > div{
@@ -30,20 +32,21 @@ header {
 }
 
 .text {
+    margin-left:1%;
     flex-direction:column;
     width:75%;
+    flex-grow:1
 }
 
 nav {
-    background-color:grey ;
+    background-color:rgb(191, 191, 191) ;
     margin:0px;
     width:25%;
-    height:100%;
-    flex-grow: 1;
+
 }
 
 ul{
-    background-color:grey ;
+    background-color:rgb(191,191,191) ;
     margin:0px;
 
 }
@@ -75,6 +78,8 @@ a{
 .showcase > img{
     max-height: 20em;
     vertical-align: top;
+    max-width:30%;
+    
 }
 
 #apartheid{
@@ -85,5 +90,18 @@ a{
 #no-space{
     margin-bottom:0px;
 }
+
+.entete{
+    display:flex;
+    width:100%;
+
+}
+.entete >img{
+    display:flex;
+    width:10em;
+    height:10em;
+    vertical-align: bottom;
+}
+
 
 
