@@ -1,17 +1,200 @@
+/* responsive écran PC */
 
-body{
-    padding:0px;
-    margin:0px;
-    font-family: 'Noto Sans',sans-serif;
-    font-size: 1.5em;
-    background-color:  rgb(255,249,240);
+@media screen and (min-width:900px){
+
+    body{   
+        font-size:1.5em;
+    } 
+  
+}
+
+@media screen and (max-width:900px) {
+    
+    body{   
+        font-size:1em;
+    }
+}
+
+@media screen {
+    body{
+        padding:0px;
+        margin:0px;
+        font-family:Arial, Helvetica, sans-serif;
+        background-color:  rgb(255,249,240);
+    }
+
+    nav {
+        background-color:rgb(191, 191, 191) ;
+        margin:0px;
+        width:25%;
+        min-height:84vh;
+    }
+
+    ul{
+        background-color:rgb(191,191,191) ;
+        margin-right:30px;
+    }
+
+    nav > ul,li{
+        margin :5px;
+        padding-top: 2%; 
+        padding-bottom: 2%; 
+    }
+
+    .container{
+        display:flex;
+        flex-direction:row;
+    }
+    
+    .text {
+        margin-left:1%;
+        width:75%;
+    }
+    
+    .entete {
+        display:flex; 
+        margin-top:2%;    
+    }
+    
+    .entete > div {
+        width:75%;
+    }
+    .entete > img {
+        width: 25%;
+    }
+    .intermediate{
+        display:flex;
+        justify-content:space-around;
+        align-items: center;
+    }
+    
+    .intermediate > section{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width:25%;
+    }
+
+    
 
 }
+
+
+
+
+
+/* responsive écran téléphone/tablette */
+
+@media handheld and (min-width: 400px) and (max-width:900px){
+
+    body{
+        font-size:1.25em;
+    }
+
+}
+
+
+@media handheld and (max-width: 400px){
+
+    body{
+        font-size:1em;
+    }
+  
+}
+
+@media handheld{
+
+    body{
+        padding:0px;
+        margin:0px;
+        font-family: 'Noto Sans',sans-serif;
+        background-color:  rgb(255,249,240);
+
+    }
+    
+    ul,li,ol{
+        padding:0%;
+        margin:0%;
+    }
+    ul {
+        display:flex;
+        flex-wrap:wrap;
+    }
+
+    nav {
+        background-color:rgb(191, 191, 191) ;
+        width:100%;
+        padding:2%;
+        display: block;
+        text-align: center;
+
+    }
+
+    nav > ul,li{
+        display:inline;
+    }
+
+    nav > ul > li > ul {
+        display:none;
+    }
+
+    .container{
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .text {
+        margin:1%;
+        width:100%;
+        text-align:center;
+    }
+    
+    .entete {
+        display:flex; 
+        flex-direction: column-reverse;
+        margin-top:2%;    
+    }
+    
+    .entete > div {
+        width:100%;
+        text-align:center;
+    }
+    .entete > img {
+        width: 100%;
+    }
+
+    ol{
+        padding:0%;
+        margin:0%;
+    }
+
+    .intermediate{
+        display:flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+    }
+    
+    .intermediate > section{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width:25%;
+    }
+}
+
+
+
+/* commun au PC/Téléphone/tablette*/
+
 
 header > div{
     display:flex;
     flex-direction: column;
-    margin-top: 25px;
 }
 
 header > div > h2,p{
@@ -21,39 +204,14 @@ header > div > h2,p{
 header {
     padding:0;
     display:flex;
+    align-items: center;
+    justify-content: center;
     background-color: rgb(13,13,13);
     color : white;
     width:100%;
+    height:12vh;
 }
 
-.container{
-    display:flex;
-    flex-direction:row;
-}
-
-.text {
-    margin-left:1%;
-    flex-direction:column;
-    width:75%;
-    flex-grow:1
-}
-
-nav {
-    background-color:rgb(191, 191, 191) ;
-    margin:0px;
-    width:25%;
-
-}
-
-ul{
-    background-color:rgb(191,191,191) ;
-    margin:0px;
-
-}
-
-ul,li{
-    padding-top: 2%; 
-}
 
 .warning{
     display:flex;
@@ -72,7 +230,6 @@ ul,li{
 a{
     color: black;
     font-weight: bold;
-    text-decoration: None;
 }
 
 .showcase > img{
@@ -83,6 +240,7 @@ a{
 }
 
 #apartheid{
+    margin-top: 0px;
     font-size:0.5em;
     font-style: italic;
 }
@@ -91,17 +249,18 @@ a{
     margin-bottom:0px;
 }
 
-.entete{
-    display:flex;
+.intermediate > section > a > img{
     width:100%;
-
-}
-.entete >img{
-    display:flex;
-    width:10em;
-    height:10em;
-    vertical-align: bottom;
+    height:100%;
 }
 
+footer{
+    background-color: rgb(13,13,13);
+    width:100%;
+    text-align:center;
+    height:4vh;
+}
 
-
+footer > a{
+    color : white;
+}
